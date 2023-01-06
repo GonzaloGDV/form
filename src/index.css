@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  background: black;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: black;
+  --color-text: white;
+  --color-greydive: #d4145a;
+  font-size: large;
+}
+
+/* .link {
+  color: var(--color-bg);
+  background: var(--color-acros);
+  border-radius: 0.4rem;
+  padding: 0.75rem;
+}
+
+.link:hover {
+  color: var(--color-text);
+  background: transparent;
+} */
+
+.btn {
+  background: var(--color-greydive);
+  color: var(--color-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: var(--color-text);
+  }
+}
