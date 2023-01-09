@@ -6,7 +6,7 @@
   border: 0;
   outline: 0;
   box-sizing: border-box;
-  background: black;
+  background: var(--color-bg);
 }
 
 html {
@@ -21,18 +21,6 @@ html {
   --color-greydive: #d4145a;
   font-size: large;
 }
-
-/* .link {
-  color: var(--color-bg);
-  background: var(--color-acros);
-  border-radius: 0.4rem;
-  padding: 0.75rem;
-}
-
-.link:hover {
-  color: var(--color-text);
-  background: transparent;
-} */
 
 .btn {
   background: var(--color-greydive);
