@@ -1,6 +1,6 @@
 # Form - Greydive Challenge
 
-![PI-Dogs](https://github.com/GonzaloGDV/PI-Dogs/blob/main/client/src/assets/Screen%20Shot.png)
+![Greydive](https://[github.com/GonzaloGDV/PI-Dogs/blob/main/client/src/assets/ScreenShot.png)
 
 ## Introduction
 
