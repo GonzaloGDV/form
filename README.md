@@ -1,6 +1,6 @@
 # Form - Greydive Challenge
 
-![Greydive](https://[github.com/GonzaloGDV/PI-Dogs/blob/main/client/src/assets/ScreenShot.png)
+![Greydive](https://github.com/GonzaloGDV/form/blob/main/src/assets/Screen%20Shot.png)
 
 ## Introduction
 
@@ -11,12 +11,13 @@ This project was done as a technical challenge for Greydive.
 ## About
 
 <p align="justify">
-The project consists in a form that allows you to complete it and store your data in Firebase DB. It also allows visitors retrieve previous answers. 
+The project consists in a form that allows you to complete it and store its data in Firebase DB. It also allows visitors to retrieve previous answers. 
 </p>
 
 ## Project Objectives
 
 - Succeed at Greydive Challenge.
+- Refresh concepts previously learn and apply new ones.
 
 ## Stack of Technologies
 
