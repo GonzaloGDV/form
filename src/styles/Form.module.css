@@ -11,3 +11,7 @@
   border: 2px solid var(--color-greydive);
   padding: 1.5rem;
 }
+
+.danger {
+  color: red;
+}
