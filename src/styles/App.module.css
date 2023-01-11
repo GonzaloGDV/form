@@ -2,28 +2,16 @@
   margin: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  min-height: 100vh;
-}
-
-header {
-  position: absolute;
-  padding-top: 1.5rem;
-  top: 0;
-  display: flex;
-  align-items: center;
-  /* border: 1px solid yellow; */
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  padding-bottom: 6.75rem;
+  box-sizing: inherit;
 }
 
 .body {
-  position: relative;
-  margin: 0;
   min-width: 96vw;
-  min-height: 100%;
-  box-sizing: inherit;
-  padding-bottom: 1.25rem;
-  /* border: 1px solid orange; */
 }
 
 footer {
@@ -31,6 +19,5 @@ footer {
   position: absolute;
   min-width: 96vw;
   bottom: 0;
-  padding-bottom: 25px;
-  /* border: 1px solid red; */
+  padding: 25px;
 }

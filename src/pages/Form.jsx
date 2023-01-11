@@ -6,6 +6,7 @@ import { database } from '../components/firebase';
 import { collection, addDoc } from 'firebase/firestore';
 import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
+import Header from '../components/Header';
 
 const Form = () => {
   const collectionRef = collection(database, 'answers');
@@ -69,7 +70,7 @@ const Form = () => {
 
   return (
     <div className={styles.container}>
-      {' '}
+      <Header />
       <form className={styles.form} style={{ maxWidth: '400px' }}>
         {data.items &&
           data.items.map(({ type, label, name, options, index }) => {
@@ -166,21 +167,6 @@ const Form = () => {
                 />
               </div>
             );
-            // (
-            //   <div className='mb-3' key={index}>
-            //     <label forhtml={name} className='form-label'>
-            //       {label}
-            //     </label>
-            //     <input
-            //       type={type}
-            //       className='form-control'
-            //       id={name}
-            //       value={input.name}
-            //       onChange={handlerInputChange}
-            //       required
-            //     />
-            //   </div>
-            // );
           })}
       </form>
     </div>

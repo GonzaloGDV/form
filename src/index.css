@@ -7,13 +7,12 @@
   outline: 0;
   box-sizing: border-box;
   background: var(--color-bg);
-  overflow-y: scroll;
 }
 
 html {
-  scroll-behavior: smooth;
   height: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {

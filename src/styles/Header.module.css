@@ -5,9 +5,10 @@
 
 .row {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   min-width: 96vw;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .link {
@@ -30,8 +31,24 @@
 
 .image {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
   max-width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .link {
+    margin: 1rem;
+    max-width: 40%;
+  }
+  .image {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+  .logo {
+    max-width: 60%;
+  }
 }

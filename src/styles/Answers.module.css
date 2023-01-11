@@ -1,3 +1,8 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+
 /* -----width < 992----- */
 
 .verTableRow {
@@ -10,9 +15,7 @@
 /* -----width > 992----- */
 
 .horContainer {
-  border: 1px green solid;
   margin: 0;
-  padding: 2rem;
 }
 
 .tableHeadRow {

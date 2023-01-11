@@ -2,15 +2,11 @@ import styles from './styles/App.module.css';
 import Form from './pages/Form';
 import Home from './pages/Home';
 import Answers from './pages/Answers';
-import Header from './components/Header';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
     <div className={styles.container}>
-      <header>
-        <Header />
-      </header>
       <div className={styles.body}>
         <Routes>
           <Route exact path='/' element={<Home />} />
