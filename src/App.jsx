@@ -1,19 +1,24 @@
 import styles from './styles/App.module.css';
 import Form from './pages/Form';
-import Dashboard from './pages/Dashboard';
+import Home from './pages/Home';
 import Answers from './pages/Answers';
+import Header from './components/Header';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
     <div className={styles.container}>
-      <div className='w-100' style={{ maxWidth: '400px' }}>
+      <header>
+        <Header />
+      </header>
+      <div className={styles.body}>
         <Routes>
-          <Route exact path='/' element={<Dashboard />} />
+          <Route exact path='/' element={<Home />} />
           <Route path='/form' element={<Form />} />
           <Route path='/answers' element={<Answers />} />
         </Routes>
       </div>
+      <footer>@ greydive. 2023</footer>
     </div>
   );
 };

@@ -1,0 +1,39 @@
+/* -----width < 992----- */
+
+.verTableRow {
+  border: 1px solid var(--color-text);
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 0.25rem;
+}
+
+/* -----width > 992----- */
+
+.horContainer {
+  border: 1px green solid;
+  margin: 0;
+  padding: 2rem;
+}
+
+.tableHeadRow {
+  border: 1px solid var(--color-text);
+  border-radius: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.tableHead {
+  color: var(--color-greydive);
+}
+
+.tableBodyRow {
+  border: 1px solid var(--color-text);
+  border-radius: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.tableBody {
+  color: var(--color-text);
+}

@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  min-width: 96vw;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 96vw;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-greydive);
+  border-radius: 1rem;
+  text-decoration: none;
+  color: var(--color-text);
+  padding: 0.1rem;
+  cursor: pointer;
+  background: var(--color-greydive);
+}
+
+.link:hover {
+  color: var(--color-greydive);
+  background: var(--color-text);
+}
+
+.image {
+  overflow: hidden;
+}
+
+.logo {
+  max-width: 100%;
+}

@@ -7,6 +7,7 @@
   outline: 0;
   box-sizing: border-box;
   background: var(--color-bg);
+  overflow-y: scroll;
 }
 
 html {
@@ -19,7 +20,7 @@ html {
   --color-bg: black;
   --color-text: white;
   --color-greydive: #d4145a;
-  font-size: large;
+  font-size: medium;
 }
 
 .btn {

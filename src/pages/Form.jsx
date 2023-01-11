@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import data from '../assets/db.json';
-// import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import styles from '../styles/Form.module.css';
 import { database } from '../components/firebase';
 import { collection, addDoc } from 'firebase/firestore';
+import { confirmAlert } from 'react-confirm-alert';
+import 'react-confirm-alert/src/react-confirm-alert.css';
 
 const Form = () => {
   const collectionRef = collection(database, 'answers');
-
+  const navigate = useNavigate();
   const [input, setInput] = useState({
     full_name: '',
     email: '',
@@ -34,10 +36,23 @@ const Form = () => {
     let answer = {
       ...input,
     };
-    console.log(answer);
     addDoc(collectionRef, { answer })
       .then(() => {
-        alert('Información agregada');
+        // alert('Información agregada');
+        confirmAlert({
+          title: 'Información agregada a la DB',
+          message: '¿Quieres ver todas las respuestas?',
+          buttons: [
+            {
+              label: 'Sí',
+              onClick: () => navigate('/answers'),
+            },
+            {
+              label: 'No',
+              onClick: null,
+            },
+          ],
+        });
       })
       .catch((err) => {
         console.log(err.message);
@@ -53,30 +68,31 @@ const Form = () => {
   }
 
   return (
-    <div>
+    <div className={styles.container}>
       {' '}
-      <form className={styles.form}>
+      <form className={styles.form} style={{ maxWidth: '400px' }}>
         {data.items &&
           data.items.map(({ type, label, name, options, index }) => {
             return JSON.stringify({ type }) ===
               JSON.stringify({ type: 'select' }) ? (
-              <select
-                onChange={handlerSelect}
-                className='form-select mt-4'
-                key={index}
-                aria-label={name}
-                required
-              >
-                <option default>{label}</option>
-                {options &&
-                  options.map(({ value, label, index }) => {
-                    return (
-                      <option key={index} value={value}>
-                        {label}
-                      </option>
-                    );
-                  })}
-              </select>
+              <div key={index}>
+                <select
+                  onChange={handlerSelect}
+                  className='form-select mt-4'
+                  aria-label={name}
+                  required
+                >
+                  <option default>{label}</option>
+                  {options &&
+                    options.map(({ value, label, index }) => {
+                      return (
+                        <option key={index} value={value}>
+                          {label}
+                        </option>
+                      );
+                    })}
+                </select>
+              </div>
             ) : JSON.stringify({ type }) ===
               JSON.stringify({ type: 'submit' }) ? (
               <button
